@@ -37,7 +37,7 @@ Hyperparameter tuning for DBSCAN involved using the k-distance graph to determin
 ![Unsupervised](images/unsupervised.png)
 
 ## **RESULTS**
-### **-Successfull Classification**
+### **-Successful Classification**
 
 Using the Logistic Regression model, our project successfully identified whether job ads were authentic or fraudulent. Hyperparameter optimisation (using Randomised Search) led to a considerable boost in performance metrics, such as accuracy and F1-score.
 
