@@ -17,11 +17,11 @@ For binary classification (Real/Fake job postings), Logistic Regression and Rand
 
 Logistic Regression was chosen for its suitability for binary classification and interpretability.
 Random Forest was considered for its high accuracy with categorical data and automatic feature importance.
-Comparison based on Precision, Recall, and F1-Score showed Logistic Regression performed better (e.g., Precision: 0.925 vs 0.910; Recall: 0.920 vs 0.905; F1-Score: 0.915 vs 0.905). We proceeded with Logistic Regression as higher scores indicate better predictive capability.
+Comparison based on Precision, Recall, and F1-Score showed Logistic Regression performed better. We proceeded with Logistic Regression as higher scores indicate better predictive capability.
 
 Subsequently, hyperparameter tuning using Randomized Search was performed. Randomized Search was chosen over Grid Search for its time efficiency and broader exploration of the parameter space, ultimately leading to even higher scores and improved model performance.
 
-![Ekran Görüntüsü]
+![Ekran Görüntüsü](https://raw.githubusercontent.com/ecessuvural/Fake-Real-Jobs/refs/heads/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-24%20220718.png?token=GHSAT0AAAAAADEPBNCIBPNPBS2GBLN7I3NS2BSDLCQ)
 
 **-Unsupervised Learning**
 
