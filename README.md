@@ -13,11 +13,25 @@ Since the dataset contains many categorical and textual values, one of the most 
 
 **-Supervised Learning**
 
-For this part, Logistic Regression and Random Forest were compared in order. The reason for choosing Logistic Regression is that it is designed for binary classification models. For example, in my dataset, job advertisements can be considered as Real and Fake. The reason for choosing Random Forest is that it works well with categorical data and can automatically calculate important features. Precision, Recall and F1-Score values ​​were examined for comparison. For example, Logistic Regression gave 0.925, Random Forest 0.910 values ​​for Precision, Logistic Regression gave 0.920, Random Forest 0.905 for Recall, Logistic Regression gave 0.915, Random Forest 0.905 for F1-Score. As a result of the comparison, we continued with Logistic Regression, which gave higher values. Because higher scores show us that the model can make better predictions in the test data. Then, hyperparameter operations were performed with RandomizedSearch and compared with the old scores together with the graph. The reason for choosing this was to save time, but Grid Search could have been preferred for a wider scope. As a result, the train operations were completed, seeing that we got higher scores.
+For binary classification (Real/Fake job postings), Logistic Regression and Random Forest were initially compared.
+
+Logistic Regression was chosen for its suitability for binary classification and interpretability.
+Random Forest was considered for its high accuracy with categorical data and automatic feature importance.
+Comparison based on Precision, Recall, and F1-Score showed Logistic Regression performed better (e.g., Precision: 0.925 vs 0.910; Recall: 0.920 vs 0.905; F1-Score: 0.915 vs 0.905). We proceeded with Logistic Regression as higher scores indicate better predictive capability.
+
+Subsequently, hyperparameter tuning using Randomized Search was performed. Randomized Search was chosen over Grid Search for its time efficiency and broader exploration of the parameter space, ultimately leading to even higher scores and improved model performance.
+
+![Ekran Görüntüsü]
 
 **-Unsupervised Learning**
 
-Here, we proceeded with K-Means and DBSCAN. Because K-Means is simpler and faster than others. DBSCAN uses a density-based approach and can provide a great advantage for detecting density differences between real/fake job advertisements. It also identifies isolated points by performing Noise Detection, which can give us an idea about fake job advertisements. Silhouette scores were examined to compare these two algorithms. It was important for us to be close to 1, and while K-Means gave a value of 0.5894, DBSCAN gave a value of 0.9746. Since the difference was quite high, we continued with DBSCAN. It was also observed with various visualizations. EPS detection was performed for hyperparameter, and for this, first of all, a k-distance graph was created. The graph was interpreted and a new eps value was obtained, and it was observed that the silhouette score increased with this value and the new score was 0.998. Thus, our processes for training were completed.
+For clustering, K-Means and DBSCAN were employed.
+
+K-Means was chosen for its simplicity and speed.
+DBSCAN was preferred for its density-based approach, ability to detect density differences in Real/Fake jobs, and robust noise detection capabilities.
+Silhouette Scores were used for comparison: K-Means yielded 0.5894, while DBSCAN achieved 0.9746. Given this significant difference, DBSCAN was selected. Visualizations also supported this choice.
+
+Hyperparameter tuning for DBSCAN involved using the k-distance graph to determine the optimal eps value. This optimization resulted in the Silhouette Score increasing to 0.9998, confirming superior clustering performance.
 
 ## **RESULTS**
 **-Successfull Classification**
