@@ -22,7 +22,7 @@ Comparison based on Precision, Recall, and F1-Score showed Logistic Regression p
 
 Subsequently, hyperparameter tuning using Randomized Search was performed. Randomized Search was chosen over Grid Search for its time efficiency and broader exploration of the parameter space, ultimately leading to even higher scores and improved model performance.
 
-![Ekran Görüntüsü](https://raw.githubusercontent.com/ecessuvural/Fake-Real-Jobs/refs/heads/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-24%20220718.png?token=GHSAT0AAAAAADEPBNCIBPNPBS2GBLN7I3NS2BSDLCQ)
+![Supervised](images/supervised.png)
 
 ### **-Unsupervised Learning**
 
@@ -34,7 +34,7 @@ Silhouette Scores were used for comparison: K-Means yielded 0.5894, while DBSCAN
 
 Hyperparameter tuning for DBSCAN involved using the k-distance graph to determine the optimal eps value. This optimization resulted in the Silhouette Score increasing to 0.9998, confirming superior clustering performance.
 
-![Ekran Görüntüsü](https://raw.githubusercontent.com/ecessuvural/Fake-Real-Jobs/refs/heads/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-24%20221610.png?token=GHSAT0AAAAAADEPBNCIIR57WP6VPL33F2LY2BSDOAQ)
+![Unsupervised](images/unsupervised.png)
 
 ## **RESULTS**
 ### **-Successfull Classification**
